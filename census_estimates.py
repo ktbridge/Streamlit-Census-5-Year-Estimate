@@ -16,8 +16,8 @@ st.markdown(
 )
 
 st.markdown(f'<style>.footer {{position: fixed; bottom: 0; left: 0; width: 100%; background-color: #F0F0F0; color: #333; text-align: center; padding: 10px; font-size: 14px; border-top: 1px solid #ccc;}}</style><div class="footer">&copy; 2025 Copyright: Christina Trowbridge. All rights reserved.</div>', unsafe_allow_html=True)
-# hide_streamlit_style = "<style>#MainMenu {visibility: hidden;} footer {visibility: hidden;} header {visibility: hidden;}</style>"
-# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+hide_streamlit_style = "<style>#MainMenu {visibility: hidden;} footer {visibility: hidden;} header {visibility: hidden;}</style>"
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 @st.cache_data
 def load_data(year):
