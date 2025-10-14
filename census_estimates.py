@@ -20,8 +20,15 @@ st.markdown(f'<style>.footer {{position: fixed; bottom: 0; left: 0; width: 100%;
 st.markdown(
     """
     <style>
-    /* Hide Streamlit main menu header */
-    header[data-testid="stHeader"] {visibility: hidden;} /* only main header */
+    header[data-testid="stHeader"] {
+        visibility: hidden;
+    }
+    footer {
+        visibility: hidden;
+    }
+    #MainMenu {
+        visibility: hidden;
+    }
     </style>
     """,
     unsafe_allow_html=True
