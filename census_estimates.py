@@ -28,7 +28,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+#st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 @st.cache_data
 def load_data(year):
