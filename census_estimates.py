@@ -24,28 +24,28 @@ def load_data(year):
     """Load census data for a specific year."""
     return pd.read_csv(f"census_data_{year}.csv")
 
-st.markdown(
-    """
-    <style>
-        [data-testid="stSidebar"] {
-            background-color: #FC8059; /* your custom color */
-        }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-st.sidebar.markdown(
-    """
-    <style>
-    [data-testid="stSidebar"] h2 {
-        font-size: 24px;
-        font-weight: bold;
-        font-family: \"Georgia\", sans-serif;
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+# st.markdown(
+#     """
+#     <style>
+#         [data-testid="stSidebar"] {
+#             background-color: #FC8059; /* your custom color */
+#         }
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
+# st.sidebar.markdown(
+#     """
+#     <style>
+#     [data-testid="stSidebar"] h2 {
+#         font-size: 24px;
+#         font-weight: bold;
+#         font-family: \"Georgia\", sans-serif;
+#     }
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 st.sidebar.header("Pick States to Filter by:")
 st.write("")
