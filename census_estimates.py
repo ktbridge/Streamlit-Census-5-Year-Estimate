@@ -16,36 +16,36 @@ st.markdown(
 )
 
 st.markdown(f'<style>.footer {{position: fixed; bottom: 0; left: 0; width: 100%; background-color: #F0F0F0; color: #333; text-align: center; padding: 10px; font-size: 14px; border-top: 1px solid #ccc;}}</style><div class="footer">&copy; 2025 Copyright: Christina Trowbridge. All rights reserved.</div>', unsafe_allow_html=True)
-hide_streamlit_style = "<style>#MainMenu {visibility: hidden;} footer {visibility: hidden;} header {visibility: hidden;}</style>"
-st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+# hide_streamlit_style = "<style>#MainMenu {visibility: hidden;} footer {visibility: hidden;} header {visibility: hidden;}</style>"
+# st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 @st.cache_data
 def load_data(year):
     """Load census data for a specific year."""
     return pd.read_csv(f"census_data_{year}.csv")
 
-# st.markdown(
-#     """
-#     <style>
-#         [data-testid="stSidebar"] {
-#             background-color: #FC8059; /* your custom color */
-#         }
-#     </style>
-#     """,
-#     unsafe_allow_html=True
-# )
-# st.sidebar.markdown(
-#     """
-#     <style>
-#     [data-testid="stSidebar"] h2 {
-#         font-size: 24px;
-#         font-weight: bold;
-#         font-family: \"Georgia\", sans-serif;
-#     }
-#     </style>
-#     """,
-#     unsafe_allow_html=True
-# )
+st.markdown(
+    """
+    <style>
+        [data-testid="stSidebar"] {
+            background-color: #FC8059; /* your custom color */
+        }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+st.sidebar.markdown(
+    """
+    <style>
+    [data-testid="stSidebar"] h2 {
+        font-size: 24px;
+        font-weight: bold;
+        font-family: \"Georgia\", sans-serif;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 st.sidebar.header("Pick States to Filter by:")
 st.write("")
