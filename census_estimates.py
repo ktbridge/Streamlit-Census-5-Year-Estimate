@@ -20,14 +20,15 @@ st.markdown(f'<style>.footer {{position: fixed; bottom: 0; left: 0; width: 100%;
 st.markdown(
     """
     <style>
-        /* Hide only the main app header bar */
         [data-testid="stHeader"] {
-            display: none;
+            background-color: #f9f5eb; 
+            box-shadow: none;
         }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 #st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
