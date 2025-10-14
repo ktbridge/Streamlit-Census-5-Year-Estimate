@@ -73,7 +73,7 @@ for y in selected_years:
 df = pd.concat(dfs)
 
 # Sidebar filter for States
-with st.sidebar.expander(""):
+with st.sidebar.expander(" "):
     states = st.multiselect("", df["State"].unique(), default=df["State"].unique())
 df_filtered = df[df["State"].isin(states)]
 
