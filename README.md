@@ -51,11 +51,11 @@ Each dataset (2019–2023) contains:
 
 ---
 
-## ⚙️ Installation
+##  Installation
 
 To run the app locally:
 
-```bash
+
 # Clone the repository
 git clone https://github.com/ktbridge/Streamlit-Census-5-Year-Estimate.git
 cd Streamlit-Census-5-Year-Estimate
