@@ -56,39 +56,18 @@ Each dataset (2019–2023) contains:
 To run the app locally:
 
 
-# Clone the repository
+### Clone the repository
 git clone https://github.com/ktbridge/Streamlit-Census-5-Year-Estimate.git
 cd Streamlit-Census-5-Year-Estimate
 
-# Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 
-# Run the Streamlit app
+### Run the Streamlit app
 streamlit run census_estimates.py
 Then open the local URL shown in your terminal (typically http://localhost:8501).
 
-🎨 Preview
 
-
-🚀 Deployment
-This app is deployed via Streamlit Community Cloud:
-
-Push all files (census_estimates.py, datasets, and requirements.txt) to your GitHub repo.
-
-Go to streamlit.io/cloud.
-
-Select your repo and deploy.
-
-Any new commit to main will automatically update the app.
-
-🧠 Technologies Used
-Python 3.9+
-
-Streamlit
-
-Plotly Express
-
-Pandas
 
 📜 License
 © 2025 Christina Trowbridge.
